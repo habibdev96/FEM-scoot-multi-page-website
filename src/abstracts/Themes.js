@@ -5,7 +5,7 @@ export const lightTheme = {
 };
 
 export const darkTheme = {
-  mainBg: 'hsl(216, 17%, 35%)',
+  mainBg: 'hsl(215, 14%, 23%)',
   heading: 'hsl(212, 41%, 93%)',
   text: 'hsl(214, 37%, 96%)',
 };

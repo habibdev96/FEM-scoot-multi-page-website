@@ -46,6 +46,8 @@ const Globals = createGlobalStyle`
 
   body {
     overflow-x: hidden;
+    background-color: ${({ theme }) => theme.mainBg};
+    transition: var(--mainTransition);
   }
 
   img {
