@@ -5,15 +5,11 @@ import { Link } from 'react-router-dom';
 import StyledLink from '../StyledElements/Link.styled';
 import StyledButton from '../StyledElements/Buttons.styled';
 import ThemeToggleButton from './ThemeToggleButton';
-import {
-  sectionSpacingSm,
-  maxWidthLg,
-  flexAlign,
-} from '../../abstracts/Mixins';
+import { maxWidthLg, flexAlign } from '../../abstracts/Mixins';
 import { useGlobalContext } from '../../context';
 
 const Container = styled.div`
-  ${sectionSpacingSm}
+  padding: 2rem;
   ${maxWidthLg}
   ${flexAlign}
   justify-content: space-between;

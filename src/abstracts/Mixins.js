@@ -10,14 +10,14 @@ const headingStyles = css`
   font-family: 'Space Mono', monospace;
   font-weight: 700;
   letter-spacing: 0.1rem;
-  line-height: 1.3;
+  line-height: 1.1;
 `;
 
 const textStyles = css`
   font-family: 'Lexend Deca', sans-serif;
   font-weight: 400;
   letter-spacing: 0.1rem;
-  line-height: 1.6;
+  line-height: 1.8;
 `;
 
 const sectionSpacingSm = css`

@@ -3,6 +3,7 @@ import { createGlobalStyle } from 'styled-components';
 const Globals = createGlobalStyle`
   :root {
     /* colors */
+    --white: hsl(0, 0%, 100%);
     --snow: hsl(214, 37%, 96%); 
     --yellow: hsl(40, 97%, 58%);
     --lightYellow: hsl(39, 100%, 94%);
