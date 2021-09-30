@@ -12,6 +12,7 @@ const StyledHeader = styled.header`
   height: 80vh;
   width: 100vw;
   overflow: hidden;
+  padding-top: 5rem;
 `;
 
 const Container = styled.div`

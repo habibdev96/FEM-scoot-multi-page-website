@@ -8,6 +8,14 @@ import ThemeToggleButton from './ThemeToggleButton';
 import { maxWidthLg, flexAlign } from '../../abstracts/Mixins';
 import { useGlobalContext } from '../../context';
 
+const StyledNav = styled.nav`
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  transition: var(--mainTransition);
+  background-color: ${({ theme }) => theme.mainBg};
+`;
+
 const Container = styled.div`
   padding: 2rem;
   ${maxWidthLg}
@@ -29,7 +37,7 @@ const Navbar = () => {
   const { theme, links } = useGlobalContext();
 
   return (
-    <nav>
+    <StyledNav>
       <Container>
         <div className='left'>
           <Link to='/'>
@@ -54,7 +62,7 @@ const Navbar = () => {
           </StyledButton>
         </div>
       </Container>
-    </nav>
+    </StyledNav>
   );
 };
 

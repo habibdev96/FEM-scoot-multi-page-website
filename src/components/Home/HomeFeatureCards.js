@@ -1,15 +1,12 @@
 import styled from 'styled-components';
 import { useGlobalContext } from '../../context';
-import { sectionSpacingMd, maxWidthLg } from '../../abstracts/Mixins';
+import { sectionSpacingMd, maxWidthLg, threeCol } from '../../abstracts/Mixins';
 import HomeFeatureCard from './HomeFeatureCard';
 
 const Container = styled.div`
   ${sectionSpacingMd}
   ${maxWidthLg}
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  align-items: center;
-  gap: var(--gap);
+  ${threeCol}
 `;
 
 const HomeFeatureCards = () => {

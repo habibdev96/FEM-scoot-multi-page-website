@@ -6,6 +6,20 @@ const flexAlign = css`
   gap: var(--gap);
 `;
 
+const twoCol = css`
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: var(--gap);
+`;
+
+const threeCol = css`
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  gap: var(--gap);
+`;
+
 const headingStyles = css`
   font-family: 'Space Mono', monospace;
   font-weight: 700;
@@ -49,6 +63,8 @@ const maxWidthLg = css`
 
 export {
   flexAlign,
+  twoCol,
+  threeCol,
   headingStyles,
   textStyles,
   sectionSpacingSm,
