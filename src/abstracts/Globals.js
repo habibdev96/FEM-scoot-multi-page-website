@@ -7,6 +7,7 @@ const Globals = createGlobalStyle`
     --yellow: hsl(40, 97%, 58%);
     --lightYellow: hsl(39, 100%, 94%);
     --darkNavy: hsl(216, 17%, 35%);
+    --darkerNavy: hsl(215, 14%, 23%);
     --dimGray: hsl(217, 12%, 62%);
     --lightGray: hsl(212, 41%, 93%);
 
@@ -46,6 +47,7 @@ const Globals = createGlobalStyle`
 
   body {
     overflow-x: hidden;
+    background: #000;
     background-color: ${({ theme }) => theme.mainBg};
     transition: var(--mainTransition);
   }

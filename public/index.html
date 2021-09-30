@@ -17,9 +17,18 @@
       href="https://fonts.googleapis.com/css2?family=Lexend+Deca&family=Space+Mono:wght@700&display=swap"
       rel="stylesheet"
     />
+    <style>
+      /* prevents flickering */
+      body.dark-mode {
+        background-color: hsl(215, 14%, 23%);
+      }
+      body.light-mode {
+        background-color: hsl(0, 0%, 95%);
+      }
+    </style>
     <title>Frontend Mentor | Scoot multi-page website</title>
   </head>
-  <body>
+  <body class="dark-mode">
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
   </body>
