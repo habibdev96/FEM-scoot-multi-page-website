@@ -1,11 +1,13 @@
 import React, { useState, useContext } from 'react';
-import { linksData } from './data';
+import { linksData, homeFeatureCardsData } from './data';
 
 const AppContext = React.createContext();
 
 export const AppProvider = ({ children }) => {
   const [theme, setTheme] = useState('dark');
   const [links, setLinks] = useState(linksData);
+  const [homeFeatureCards, setHomeFeatureCards] =
+    useState(homeFeatureCardsData);
 
   const themeToggler = () => {
     if (theme === 'light') {
@@ -20,7 +22,9 @@ export const AppProvider = ({ children }) => {
   const scrollToTop = () => window.scrollTo(0, 0);
 
   return (
-    <AppContext.Provider value={{ theme, themeToggler, links }}>
+    <AppContext.Provider
+      value={{ theme, themeToggler, links, homeFeatureCards }}
+    >
       {children}
     </AppContext.Provider>
   );
