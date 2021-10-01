@@ -14,6 +14,12 @@ const Toggler = styled.button`
   outline: 0;
   border: 0;
   background-color: transparent;
+  transition: var(--mainTransition);
+
+  &:hover,
+  &:focus {
+    color: var(--yellow);
+  }
 `;
 
 const ThemeToggleButton = () => {

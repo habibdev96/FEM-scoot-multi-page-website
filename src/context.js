@@ -1,5 +1,5 @@
 import React, { useState, useContext } from 'react';
-import { linksData, homeFeatureCardsData } from './data';
+import { linksData, homeFeatureCardsData, socialsData } from './data';
 
 const AppContext = React.createContext();
 
@@ -8,6 +8,7 @@ export const AppProvider = ({ children }) => {
   const [links, setLinks] = useState(linksData);
   const [homeFeatureCards, setHomeFeatureCards] =
     useState(homeFeatureCardsData);
+  const [socials, setSocials] = useState(socialsData);
 
   const themeToggler = () => {
     if (theme === 'light') {
@@ -23,7 +24,7 @@ export const AppProvider = ({ children }) => {
 
   return (
     <AppContext.Provider
-      value={{ theme, themeToggler, links, homeFeatureCards }}
+      value={{ theme, themeToggler, links, homeFeatureCards, socials }}
     >
       {children}
     </AppContext.Provider>

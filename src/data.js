@@ -2,6 +2,8 @@ import homeFeatureCardIconOne from './assets/icons/locate.svg';
 import homeFeatureCardIconTwo from './assets/icons/scooter.svg';
 import homeFeatureCardIconThree from './assets/icons/ride.svg';
 
+import { FaFacebookSquare, FaTwitter, FaInstagram } from 'react-icons/fa';
+
 export const linksData = [
   {
     id: 1,
@@ -41,5 +43,26 @@ export const homeFeatureCardsData = [
     title: 'Enjoy the ride',
     description:
       'Scan the QR code and the bike will unlock. Retract the cable lock, put on a helmet, and you’re off! Always lock bikes away from walkways and accessibility ramps.',
+  },
+];
+
+export const socialsData = [
+  {
+    id: 1,
+    social: 'Facebook',
+    icon: <FaFacebookSquare />,
+    path: '#!',
+  },
+  {
+    id: 2,
+    social: 'Twitter',
+    icon: <FaTwitter />,
+    path: '#!',
+  },
+  {
+    id: 3,
+    social: 'Instagram',
+    icon: <FaInstagram />,
+    path: '#!',
   },
 ];

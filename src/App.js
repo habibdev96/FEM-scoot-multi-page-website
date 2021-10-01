@@ -9,6 +9,7 @@ import Location from './pages/Location';
 import Careers from './pages/Careers';
 import Navbar from './components/Shared/Navbar';
 import Cta from './components/Shared/Cta';
+import Footer from './components/Shared/Footer';
 
 const App = () => {
   const { theme } = useGlobalContext();
@@ -26,6 +27,7 @@ const App = () => {
             <Route exact path='/Careers' component={Careers} />
           </Switch>
           <Cta />
+          <Footer />
         </Router>
       </ThemeProvider>
     </>
