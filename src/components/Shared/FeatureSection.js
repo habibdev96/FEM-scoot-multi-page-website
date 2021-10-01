@@ -84,7 +84,7 @@ const FeatureSection = ({
   buttonPath,
   patterns: { circle, circleDark, arrow },
 }) => {
-  const { theme } = useGlobalContext();
+  const { theme, scrollToTop } = useGlobalContext();
 
   return (
     <StyledSection>
@@ -93,7 +93,7 @@ const FeatureSection = ({
           <SectionHeading>{title}</SectionHeading>
           <Paragraph>{description}</Paragraph>
           {showButton && (
-            <StyledButton to={buttonPath} primary={+true}>
+            <StyledButton to={buttonPath} primary={+true} onClick={scrollToTop}>
               {buttonText}
             </StyledButton>
           )}

@@ -5,8 +5,7 @@ import CompanyValuesCards from '../components/Shared/CompanyValuesCards';
 import { useGlobalContext } from '../context';
 
 const About = () => {
-  const { aboutFeatureSections, scrollToTop } = useGlobalContext();
-  scrollToTop();
+  const { aboutFeatureSections } = useGlobalContext();
 
   return (
     <>

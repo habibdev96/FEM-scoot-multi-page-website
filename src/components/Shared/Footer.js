@@ -42,19 +42,21 @@ const Container = styled.div`
 `;
 
 const Footer = () => {
-  const { links, socials } = useGlobalContext();
+  const { links, socials, scrollToTop } = useGlobalContext();
 
   return (
     <StyledFooter>
       <Container>
         <div>
-          <Link to='/'>
+          <Link to='/' onClick={scrollToTop}>
             <img src={logo} alt='scoot logo' className='logo' />
           </Link>
           <ul className='links'>
             {links.map((link) => (
               <li key={link.id}>
-                <StyledLink to={link.path}>{link.text}</StyledLink>
+                <StyledLink to={link.path} onClick={scrollToTop}>
+                  {link.text}
+                </StyledLink>
               </li>
             ))}
           </ul>

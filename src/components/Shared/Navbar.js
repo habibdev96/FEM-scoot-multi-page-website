@@ -34,13 +34,13 @@ const Container = styled.div`
 `;
 
 const Navbar = () => {
-  const { theme, links } = useGlobalContext();
+  const { theme, links, scrollToTop } = useGlobalContext();
 
   return (
     <StyledNav>
       <Container>
         <div className='left'>
-          <Link to='/'>
+          <Link to='/' onClick={scrollToTop}>
             <img
               src={theme === 'light' ? logodark : logolight}
               alt='scoot logo'
@@ -50,14 +50,16 @@ const Navbar = () => {
           <ul className='links'>
             {links.map((link) => (
               <li key={link.id}>
-                <StyledLink to={link.path}>{link.text}</StyledLink>
+                <StyledLink to={link.path} onClick={scrollToTop}>
+                  {link.text}
+                </StyledLink>
               </li>
             ))}
           </ul>
         </div>
         <div className='right'>
           <ThemeToggleButton />
-          <StyledButton to='/Location' primary={+true}>
+          <StyledButton to='/Location' primary={+true} onClick={scrollToTop}>
             Get Scootin
           </StyledButton>
         </div>

@@ -141,6 +141,7 @@ export const aboutFeatureSectionsData = [
     description:
       'Getting around should be simple (and even fun!) for everyone. We embrace technology to provide low cost, smart access to scooters at your fingertips.',
     showcase: aboutShowcaseOne,
+    alt: 'woman looking at her phone',
     showButton: false,
     patterns: {
       circle: patternCircle,
@@ -154,6 +155,7 @@ export const aboutFeatureSectionsData = [
     description:
       'We’re helping connect cities and bring people closer together. Our scooters are also fully-electric and we offset the minimal carbon footprint for each ride.',
     showcase: aboutShowcaseTwo,
+    alt: 'city street',
     showButton: false,
     patterns: {
       circle: patternCircle,

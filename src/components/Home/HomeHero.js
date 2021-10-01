@@ -6,6 +6,7 @@ import bgImage from '../../assets/images/home-hero-desktop.jpg';
 import line from '../../assets/patterns/line.svg';
 import rightArrow from '../../assets/patterns/right-arrow.svg';
 import circles from '../../assets/patterns/white-circles.svg';
+import { useGlobalContext } from '../../context';
 
 const StyledHeader = styled.header`
   background: url(${bgImage}) center center/cover no-repeat;
@@ -53,6 +54,8 @@ const Container = styled.div`
 `;
 
 const HomeHero = () => {
+  const { scrollToTop } = useGlobalContext();
+
   return (
     <StyledHeader>
       <Container>
@@ -67,7 +70,7 @@ const HomeHero = () => {
               in convenient locations in each of our cities. Use our app to
               locate the nearest bike, unlock it with a tap, and you’re away!
             </Paragraph>
-            <StyledButton to='/Location' primary={+true}>
+            <StyledButton to='/Location' primary={+true} onClick={scrollToTop}>
               Get Scootin
             </StyledButton>
           </div>
