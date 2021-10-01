@@ -4,7 +4,8 @@ import FeatureSection from '../components/Shared/FeatureSection';
 import { useGlobalContext } from '../context';
 
 const Home = () => {
-  const { homeFeatureSections } = useGlobalContext();
+  const { homeFeatureSections, scrollToTop } = useGlobalContext();
+  scrollToTop();
 
   return (
     <>

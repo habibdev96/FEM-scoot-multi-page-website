@@ -8,6 +8,9 @@ import homeShowcaseOne from './assets/images/telemetry.jpg';
 import homeShowcaseTwo from './assets/images/near-you.jpg';
 import homeShowcaseThree from './assets/images/payments.jpg';
 
+import aboutShowcaseOne from './assets/images/digital-era.jpg';
+import aboutShowcaseTwo from './assets/images/better-living.jpg';
+
 import patternCircle from './assets/patterns/circle.svg';
 import patternCircleDark from './assets/patterns/circledark.svg';
 import patternArrowOne from './assets/patterns/left-downward-arrow.svg';
@@ -123,6 +126,35 @@ export const homeFeatureSectionsData = [
       circle: patternCircle,
       circleDark: patternCircleDark,
       arrow: patternArrowOne,
+    },
+  },
+];
+
+export const aboutFeatureSectionsData = [
+  {
+    id: 1,
+    title: 'Mobility for the digital age',
+    description:
+      'Getting around should be simple (and even fun!) for everyone. We embrace technology to provide low cost, smart access to scooters at your fingertips.',
+    showcase: aboutShowcaseOne,
+    showButton: false,
+    patterns: {
+      circle: patternCircle,
+      circleDark: patternCircleDark,
+      arrow: patternArrowOne,
+    },
+  },
+  {
+    id: 2,
+    title: 'Better urban living',
+    description:
+      'We’re helping connect cities and bring people closer together. Our scooters are also fully-electric and we offset the minimal carbon footprint for each ride.',
+    showcase: aboutShowcaseTwo,
+    showButton: false,
+    patterns: {
+      circle: patternCircle,
+      circleDark: patternCircleDark,
+      arrow: patternArrowTwo,
     },
   },
 ];

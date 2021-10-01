@@ -4,6 +4,7 @@ import {
   homeFeatureCardsData,
   socialsData,
   homeFeatureSectionsData,
+  aboutFeatureSectionsData,
 } from './data';
 
 const AppContext = React.createContext();
@@ -16,6 +17,9 @@ export const AppProvider = ({ children }) => {
   const [socials, setSocials] = useState(socialsData);
   const [homeFeatureSections, setHomeFeatureSections] = useState(
     homeFeatureSectionsData
+  );
+  const [aboutFeatureSections, setAboutFeatureSections] = useState(
+    aboutFeatureSectionsData
   );
 
   const themeToggler = () => {
@@ -33,12 +37,14 @@ export const AppProvider = ({ children }) => {
   return (
     <AppContext.Provider
       value={{
+        scrollToTop,
         theme,
         themeToggler,
         links,
         homeFeatureCards,
         homeFeatureSections,
         socials,
+        aboutFeatureSections,
       }}
     >
       {children}
