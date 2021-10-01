@@ -5,6 +5,7 @@ import {
   socialsData,
   homeFeatureSectionsData,
   aboutFeatureSectionsData,
+  companyValuesCardsData,
 } from './data';
 
 const AppContext = React.createContext();
@@ -21,6 +22,7 @@ export const AppProvider = ({ children }) => {
   const [aboutFeatureSections, setAboutFeatureSections] = useState(
     aboutFeatureSectionsData
   );
+  const [companyValues, setCompanyValues] = useState(companyValuesCardsData);
 
   const themeToggler = () => {
     if (theme === 'light') {
@@ -45,6 +47,7 @@ export const AppProvider = ({ children }) => {
         homeFeatureSections,
         socials,
         aboutFeatureSections,
+        companyValues,
       }}
     >
       {children}

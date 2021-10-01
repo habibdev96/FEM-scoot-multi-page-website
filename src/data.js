@@ -16,6 +16,10 @@ import patternCircleDark from './assets/patterns/circledark.svg';
 import patternArrowOne from './assets/patterns/left-downward-arrow.svg';
 import patternArrowTwo from './assets/patterns/right-arrow.svg';
 
+import companyValueImageOne from './assets/images/our-tech.jpg';
+import companyValueImageTwo from './assets/images/our-integrity.jpg';
+import companyValueImageThree from './assets/images/our-community.jpg';
+
 export const linksData = [
   {
     id: 1,
@@ -156,5 +160,35 @@ export const aboutFeatureSectionsData = [
       circleDark: patternCircleDark,
       arrow: patternArrowTwo,
     },
+  },
+];
+
+export const companyValuesCardsData = [
+  {
+    id: 1,
+    image: companyValueImageOne,
+    alt: 'person using phone',
+    number: '01',
+    value: 'Our tech',
+    description:
+      'We’re using cutting edge technology to drive accessible urban transportation forward. Our fully electric scooters are a joy to ride!',
+  },
+  {
+    id: 2,
+    image: companyValueImageTwo,
+    alt: 'person on mopid',
+    number: '02',
+    value: 'Our integrity',
+    description:
+      'We are fully committed to deliver a great yet safe, sustainable micro-mobility experience in every city we serve.',
+  },
+  {
+    id: 3,
+    image: companyValueImageThree,
+    alt: 'people crossing street',
+    number: '03',
+    value: 'Our community',
+    description:
+      'We support every community we serve. All workers are paid a living wage based on their location and are Scoot employees.',
   },
 ];
