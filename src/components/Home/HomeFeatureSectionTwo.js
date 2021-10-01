@@ -3,10 +3,10 @@ import { SectionHeading } from '../StyledElements/Headings.styled';
 import Paragraph from '../StyledElements/Paragraphs.styled';
 import StyledButton from '../StyledElements/Buttons.styled';
 import { sectionSpacingMd, maxWidthLg, twoCol } from '../../abstracts/Mixins';
-import showcase from '../../assets/images/telemetry.jpg';
+import showcase from '../../assets/images/near-you.jpg';
 import patternCircle from '../../assets/patterns/circle.svg';
 import patternCircleDark from '../../assets/patterns/circledark.svg';
-import patternArrow from '../../assets/patterns/left-downward-arrow.svg';
+import patternArrow from '../../assets/patterns/right-arrow.svg';
 import { useGlobalContext } from '../../context';
 
 const StyledSection = styled.section`
@@ -26,15 +26,15 @@ const StyledSection = styled.section`
 
     &--arrow {
       z-index: 10;
-      width: 60%;
-      top: 60%;
-      right: 0;
+      width: 30%;
+      top: 20%;
+      left: 0;
     }
 
     &--circle {
       z-index: 1;
       width: 30%;
-      right: -20%;
+      left: -20%;
       top: 20%;
     }
   }
@@ -46,29 +46,29 @@ const Container = styled.div`
   ${twoCol}
 `;
 
-const HomeFeatureSectionOne = () => {
+const HomeFeatureSectionTwo = () => {
   const { theme } = useGlobalContext();
 
   return (
     <StyledSection>
       <Container>
-        <div>
-          <SectionHeading>Easy to use riding telemetry</SectionHeading>
-          <Paragraph>
-            The Scoot app is available with riding telemetry. This means it can
-            show you your average speed, how long you've been using the scooter,
-            your traveling distance, and many more things all in an easy to use
-            app.
-          </Paragraph>
-          <StyledButton to='/About' primary={+true}>
-            Learn More
-          </StyledButton>
-        </div>
         <img
           src={showcase}
           alt='woman looking at her phone'
           className='showcase'
         />
+        <div>
+          <SectionHeading>Coming to a city near you</SectionHeading>
+          <Paragraph>
+            Scoot is available in 4 major cities so far. We’re expanding
+            rapidly, so be sure to let us know if you want to see us in your
+            hometown. We’re aiming to let our scooters loose on 23 cities over
+            the coming year.
+          </Paragraph>
+          <StyledButton to='/About' primary={+true}>
+            Learn More
+          </StyledButton>
+        </div>
       </Container>
       <img src={patternArrow} alt='' className='pattern pattern--arrow' />
       <img
@@ -80,4 +80,4 @@ const HomeFeatureSectionOne = () => {
   );
 };
 
-export default HomeFeatureSectionOne;
+export default HomeFeatureSectionTwo;

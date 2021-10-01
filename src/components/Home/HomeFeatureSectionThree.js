@@ -3,7 +3,7 @@ import { SectionHeading } from '../StyledElements/Headings.styled';
 import Paragraph from '../StyledElements/Paragraphs.styled';
 import StyledButton from '../StyledElements/Buttons.styled';
 import { sectionSpacingMd, maxWidthLg, twoCol } from '../../abstracts/Mixins';
-import showcase from '../../assets/images/telemetry.jpg';
+import showcase from '../../assets/images/payments.jpg';
 import patternCircle from '../../assets/patterns/circle.svg';
 import patternCircleDark from '../../assets/patterns/circledark.svg';
 import patternArrow from '../../assets/patterns/left-downward-arrow.svg';
@@ -26,9 +26,9 @@ const StyledSection = styled.section`
 
     &--arrow {
       z-index: 10;
-      width: 60%;
-      top: 60%;
-      right: 0;
+      width: 50%;
+      top: 30%;
+      right: -20%;
     }
 
     &--circle {
@@ -46,7 +46,7 @@ const Container = styled.div`
   ${twoCol}
 `;
 
-const HomeFeatureSectionOne = () => {
+const HomeFeatureSectionThree = () => {
   const { theme } = useGlobalContext();
 
   return (
@@ -80,4 +80,4 @@ const HomeFeatureSectionOne = () => {
   );
 };
 
-export default HomeFeatureSectionOne;
+export default HomeFeatureSectionThree;
