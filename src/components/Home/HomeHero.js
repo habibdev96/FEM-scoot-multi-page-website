@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { HeroHeading } from '../StyledElements/Headings.styled';
 import Paragraph from '../StyledElements/Paragraphs.styled';
-import StyledButton from '../StyledElements/Buttons.styled';
+import { StyledButton } from '../StyledElements/Buttons.styled';
 import bgImage from '../../assets/images/home-hero-desktop.jpg';
 import line from '../../assets/patterns/line.svg';
 import rightArrow from '../../assets/patterns/right-arrow.svg';

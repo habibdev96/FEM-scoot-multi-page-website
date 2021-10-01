@@ -8,6 +8,7 @@ import About from './pages/About';
 import Location from './pages/Location';
 import Careers from './pages/Careers';
 import Navbar from './components/Shared/Navbar';
+import Cta from './components/Shared/Cta';
 
 const App = () => {
   const { theme } = useGlobalContext();
@@ -24,6 +25,7 @@ const App = () => {
             <Route exact path='/Location' component={Location} />
             <Route exact path='/Careers' component={Careers} />
           </Switch>
+          <Cta />
         </Router>
       </ThemeProvider>
     </>

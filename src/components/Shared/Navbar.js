@@ -3,7 +3,7 @@ import logodark from '../../assets/logo.svg';
 import logolight from '../../assets/logolight.svg';
 import { Link } from 'react-router-dom';
 import StyledLink from '../StyledElements/Link.styled';
-import StyledButton from '../StyledElements/Buttons.styled';
+import { StyledButton } from '../StyledElements/Buttons.styled';
 import ThemeToggleButton from './ThemeToggleButton';
 import { maxWidthLg, flexAlign } from '../../abstracts/Mixins';
 import { useGlobalContext } from '../../context';

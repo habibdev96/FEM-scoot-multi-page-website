@@ -2,7 +2,7 @@ import styled, { css } from 'styled-components';
 import { Link } from 'react-router-dom';
 import { headingStyles } from '../../abstracts/Mixins';
 
-const StyledButton = styled(Link)`
+export const StyledButton = styled(Link)`
   display: inline-block;
   font-size: 1.5rem;
   padding: 1.5rem 4rem;
@@ -23,5 +23,3 @@ const StyledButton = styled(Link)`
       }
     `}
 `;
-
-export default StyledButton;

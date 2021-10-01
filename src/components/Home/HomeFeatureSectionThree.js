@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { SectionHeading } from '../StyledElements/Headings.styled';
 import Paragraph from '../StyledElements/Paragraphs.styled';
-import StyledButton from '../StyledElements/Buttons.styled';
+import { StyledButton } from '../StyledElements/Buttons.styled';
 import { sectionSpacingMd, maxWidthLg, twoCol } from '../../abstracts/Mixins';
 import showcase from '../../assets/images/payments.jpg';
 import patternCircle from '../../assets/patterns/circle.svg';
@@ -53,7 +53,9 @@ const HomeFeatureSectionThree = () => {
     <StyledSection>
       <Container>
         <div>
-          <SectionHeading>Easy to use riding telemetry</SectionHeading>
+          <SectionHeading>
+            Easy to use <br /> riding telemetry
+          </SectionHeading>
           <Paragraph>
             The Scoot app is available with riding telemetry. This means it can
             show you your average speed, how long you've been using the scooter,

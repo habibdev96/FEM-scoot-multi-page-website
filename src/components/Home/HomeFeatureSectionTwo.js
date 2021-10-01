@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { SectionHeading } from '../StyledElements/Headings.styled';
 import Paragraph from '../StyledElements/Paragraphs.styled';
-import StyledButton from '../StyledElements/Buttons.styled';
+import { StyledButton } from '../StyledElements/Buttons.styled';
 import { sectionSpacingMd, maxWidthLg, twoCol } from '../../abstracts/Mixins';
 import showcase from '../../assets/images/near-you.jpg';
 import patternCircle from '../../assets/patterns/circle.svg';
@@ -58,7 +58,9 @@ const HomeFeatureSectionTwo = () => {
           className='showcase'
         />
         <div>
-          <SectionHeading>Coming to a city near you</SectionHeading>
+          <SectionHeading>
+            Coming to a city <br /> near you
+          </SectionHeading>
           <Paragraph>
             Scoot is available in 4 major cities so far. We’re expanding
             rapidly, so be sure to let us know if you want to see us in your

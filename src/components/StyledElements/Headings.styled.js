@@ -11,6 +11,7 @@ export const SectionHeading = styled.h2`
   ${headingStyles}
   font-size: 4.8rem;
   color: ${({ theme }) => theme.heading};
+  ${({ light }) => light && 'color: var(--white);'}
 `;
 
 export const CardHeading = styled.h4`
