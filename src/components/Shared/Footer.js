@@ -7,6 +7,7 @@ import {
 import StyledLink from '../StyledElements/Link.styled';
 import logo from '../../assets/logolight.svg';
 import { Link } from 'react-router-dom';
+import Tag from './Tag';
 import { useGlobalContext } from '../../context';
 
 const StyledFooter = styled.footer`
@@ -66,6 +67,7 @@ const Footer = () => {
           ))}
         </div>
       </Container>
+      <Tag />
     </StyledFooter>
   );
 };
