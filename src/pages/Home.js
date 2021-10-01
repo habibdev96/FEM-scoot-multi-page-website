@@ -1,18 +1,19 @@
 import HomeHero from '../components/Home/HomeHero';
 import HomeFeatureCards from '../components/Home/HomeFeatureCards';
-import HomeFeatureSectionOne from '../components/Home/HomeFeatureSectionOne';
-import HomeFeatureSectionTwo from '../components/Home/HomeFeatureSectionTwo';
-import HomeFeatureSectionThree from '../components/Home/HomeFeatureSectionThree';
+import FeatureSection from '../components/Shared/FeatureSection';
+import { useGlobalContext } from '../context';
 
 const Home = () => {
+  const { homeFeatureSections } = useGlobalContext();
+
   return (
     <>
       <HomeHero />
       <main>
         <HomeFeatureCards />
-        <HomeFeatureSectionOne />
-        <HomeFeatureSectionTwo />
-        <HomeFeatureSectionThree />
+        {homeFeatureSections.map((section) => (
+          <FeatureSection key={section.id} {...section} />
+        ))}
       </main>
     </>
   );

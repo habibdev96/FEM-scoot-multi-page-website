@@ -1,5 +1,10 @@
 import React, { useState, useContext } from 'react';
-import { linksData, homeFeatureCardsData, socialsData } from './data';
+import {
+  linksData,
+  homeFeatureCardsData,
+  socialsData,
+  homeFeatureSectionsData,
+} from './data';
 
 const AppContext = React.createContext();
 
@@ -9,6 +14,9 @@ export const AppProvider = ({ children }) => {
   const [homeFeatureCards, setHomeFeatureCards] =
     useState(homeFeatureCardsData);
   const [socials, setSocials] = useState(socialsData);
+  const [homeFeatureSections, setHomeFeatureSections] = useState(
+    homeFeatureSectionsData
+  );
 
   const themeToggler = () => {
     if (theme === 'light') {
@@ -24,7 +32,14 @@ export const AppProvider = ({ children }) => {
 
   return (
     <AppContext.Provider
-      value={{ theme, themeToggler, links, homeFeatureCards, socials }}
+      value={{
+        theme,
+        themeToggler,
+        links,
+        homeFeatureCards,
+        homeFeatureSections,
+        socials,
+      }}
     >
       {children}
     </AppContext.Provider>
