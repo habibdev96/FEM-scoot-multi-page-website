@@ -11,6 +11,8 @@ import homeShowcaseThree from './assets/images/payments.jpg';
 import aboutShowcaseOne from './assets/images/digital-era.jpg';
 import aboutShowcaseTwo from './assets/images/better-living.jpg';
 
+import careersShowcase from './assets/images/join-us.jpg';
+
 import patternCircle from './assets/patterns/circle.svg';
 import patternCircleDark from './assets/patterns/circledark.svg';
 import patternArrowOne from './assets/patterns/left-downward-arrow.svg';
@@ -236,4 +238,23 @@ export const faqsData = [
         "Be sure to read our terms and conditions carefully. Not the most fun job we know but we make it as clear as possible. There's an option to add insurance for each trip, or you can sign up for annual insurance if you're a regular Scooter.",
     },
   ],
+];
+
+export const careersFeatureSectionData = [
+  {
+    id: 1,
+    title: 'Care to join our mission?',
+    description:
+      'We’re always looking for ambitious individuals to help us on our journey. If you’re passionate about our mission to provide clean, accessible transport to improve urban living we want to hear from you!',
+    showcase: careersShowcase,
+    alt: 'people at meeting',
+    showButton: true,
+    buttonText: 'Say Hello',
+    buttonPath: '/Location',
+    patterns: {
+      circle: patternCircle,
+      circleDark: patternCircleDark,
+      arrow: patternArrowOne,
+    },
+  },
 ];

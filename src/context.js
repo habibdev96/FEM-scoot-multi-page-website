@@ -7,6 +7,7 @@ import {
   aboutFeatureSectionsData,
   companyValuesCardsData,
   faqsData,
+  careersFeatureSectionData,
 } from './data';
 
 const AppContext = React.createContext();
@@ -25,6 +26,9 @@ export const AppProvider = ({ children }) => {
   );
   const [companyValues, setCompanyValues] = useState(companyValuesCardsData);
   const [faqs, setFaqs] = useState(faqsData);
+  const [careersFeatureSection, setCareersFeatureSection] = useState(
+    careersFeatureSectionData
+  );
 
   const themeToggler = () => {
     if (theme === 'light') {
@@ -51,6 +55,7 @@ export const AppProvider = ({ children }) => {
         aboutFeatureSections,
         companyValues,
         faqs,
+        careersFeatureSection,
       }}
     >
       {children}
