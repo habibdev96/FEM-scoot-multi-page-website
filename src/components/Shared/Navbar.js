@@ -7,6 +7,7 @@ import { StyledButton } from '../StyledElements/Buttons.styled';
 import ThemeToggleButton from './ThemeToggleButton';
 import { maxWidthLg, flexAlign } from '../../abstracts/Mixins';
 import { useGlobalContext } from '../../context';
+import Responsive from '../../abstracts/Responsive';
 
 const StyledNav = styled.nav`
   position: fixed;
@@ -30,6 +31,13 @@ const Container = styled.div`
   .right,
   .links {
     ${flexAlign}
+  }
+
+  .links,
+  .btn {
+    ${Responsive.lg`
+      display: none;
+    `}
   }
 `;
 
@@ -59,7 +67,12 @@ const Navbar = () => {
         </div>
         <div className='right'>
           <ThemeToggleButton />
-          <StyledButton to='/Location' primary={+true} onClick={scrollToTop}>
+          <StyledButton
+            className='btn'
+            to='/Location'
+            primary={+true}
+            onClick={scrollToTop}
+          >
             Get Scootin
           </StyledButton>
         </div>

@@ -9,6 +9,7 @@ import logo from '../../assets/logolight.svg';
 import { Link } from 'react-router-dom';
 import Tag from './Tag';
 import { useGlobalContext } from '../../context';
+import Responsive from '../../abstracts/Responsive';
 
 const StyledFooter = styled.footer`
   background-color: var(--darkerNavy);
@@ -20,6 +21,10 @@ const Container = styled.div`
   ${flexAlign}
   justify-content: space-between;
 
+  ${Responsive.lg`
+    flex-direction: column;
+  `}
+
   .logo {
     width: 15rem;
   }
@@ -27,6 +32,16 @@ const Container = styled.div`
   & > div,
   .links {
     ${flexAlign}
+
+    ${Responsive.sm`
+      flex-direction: column;   
+    `}
+  }
+
+  .socials {
+    ${Responsive.sm`
+      flex-direction: row;   
+    `}
   }
 
   .social svg {

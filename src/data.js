@@ -271,22 +271,22 @@ export const careersPositionsData = [
     location: 'Yokohama, Japan',
   },
   {
-    id: 1,
+    id: 3,
     position: 'Blog Content Copywriter',
     location: 'New York, United States',
   },
   {
-    id: 1,
+    id: 4,
     position: 'Graphic Designer',
     location: 'New York, United States',
   },
   {
-    id: 1,
+    id: 5,
     position: 'Fleet Supervisor',
     location: 'Jarkata, Indonesia',
   },
   {
-    id: 1,
+    id: 6,
     position: 'UX Analyst',
     location: 'London, United Kingdom',
   },

@@ -3,13 +3,20 @@ import { CardHeading } from '../StyledElements/Headings.styled';
 import Paragraph from '../StyledElements/Paragraphs.styled';
 import { StyledButton } from '../StyledElements/Buttons.styled';
 import { flexAlign } from '../../abstracts/Mixins';
+import Responsive from '../../abstracts/Responsive';
 
 const StyledArticle = styled.article`
   ${flexAlign}
+
   justify-content: space-between;
   margin: 5rem 0;
   padding: 3rem 2rem;
   background-color: ${({ theme }) => theme.secondaryBg};
+
+  ${Responsive.sm`
+    text-align: center;
+    flex-direction: column;
+  `}
 `;
 
 const Position = ({ position, location }) => {

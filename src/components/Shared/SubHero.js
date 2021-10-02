@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import { HeroHeading } from '../StyledElements/Headings.styled';
 import circles from '../../assets/patterns/white-circles.svg';
 import { maxWidthLg, flexAlign } from '../../abstracts/Mixins';
+import Responsive from '../../abstracts/Responsive';
 
 const Container = styled.div`
   ${maxWidthLg}
@@ -9,10 +10,22 @@ const Container = styled.div`
   justify-content: space-between;
   padding: 20rem 2rem 10rem 2rem;
 
+  ${Responsive.sm`
+    justify-content: center;
+  `}
+
   .pattern {
     position: absolute;
     right: -3%;
     width: 20%;
+
+    ${Responsive.lg`
+      width: 40%;
+    `}
+
+    ${Responsive.sm`
+      display: none;
+    `}
   }
 `;
 

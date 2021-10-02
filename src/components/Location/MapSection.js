@@ -5,6 +5,7 @@ import {
   maxWidthLg,
   headingStyles,
 } from '../../abstracts/Mixins';
+import Responsive from '../../abstracts/Responsive';
 
 const Container = styled.div`
   ${sectionSpacingMd}
@@ -17,9 +18,22 @@ const Container = styled.div`
     padding: 2rem;
     position: absolute;
 
+    ${Responsive.sm`
+      border-radius: 50%;
+    `}
+
     &--1 {
       top: 25%;
       left: 20%;
+
+      ${Responsive.md`
+        left: 5rem;
+      `}
+
+      ${Responsive.sm`
+        left: 20%;
+        top: 30%;
+      `}
     }
 
     &--2 {
@@ -41,6 +55,14 @@ const Container = styled.div`
       ${headingStyles}
       font-size: 2.4rem;
       color: var(--darkNavy);
+
+      ${Responsive.lg`
+        font-size: 1.5rem;
+      `}
+
+      ${Responsive.sm`
+        display: none;
+      `}
     }
   }
 `;

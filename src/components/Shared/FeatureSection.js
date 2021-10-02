@@ -4,10 +4,15 @@ import Paragraph from '../StyledElements/Paragraphs.styled';
 import { StyledButton } from '../StyledElements/Buttons.styled';
 import { sectionSpacingMd, maxWidthLg, twoCol } from '../../abstracts/Mixins';
 import { useGlobalContext } from '../../context';
+import Responsive from '../../abstracts/Responsive';
 
 const StyledSection = styled.section`
   position: relative;
   overflow: hidden;
+
+  ${Responsive.lg`
+    text-align: center;
+  `}
 
   .showcase {
     position: relative;
@@ -19,6 +24,10 @@ const StyledSection = styled.section`
     &.left {
       order: -1;
     }
+
+    ${Responsive.lg`
+      order: -1;
+    `}
   }
 
   // bg pattern styles based on id of section
@@ -31,6 +40,10 @@ const StyledSection = styled.section`
         top: 60%;
         right: 0;
         z-index: 10;
+
+        ${Responsive.lg`
+          top: 30%; 
+        `}
       }
 
       &-2 {
@@ -71,6 +84,10 @@ const Container = styled.div`
   ${sectionSpacingMd}
   ${maxWidthLg}
   ${twoCol}
+
+  ${Responsive.lg`
+    grid-template-columns: 1fr;
+  `}
 `;
 
 const FeatureSection = ({
@@ -89,7 +106,7 @@ const FeatureSection = ({
   return (
     <StyledSection>
       <Container>
-        <div>
+        <div className='info'>
           <SectionHeading>{title}</SectionHeading>
           <Paragraph>{description}</Paragraph>
           {showButton && (

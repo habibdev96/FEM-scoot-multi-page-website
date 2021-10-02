@@ -1,8 +1,14 @@
 import styled from 'styled-components';
-import { sectionSpacingMd, maxWidthLg, threeCol } from '../../abstracts/Mixins';
+import {
+  sectionSpacingMd,
+  maxWidthLg,
+  threeCol,
+  twoCol,
+} from '../../abstracts/Mixins';
 import { SectionHeading } from '../StyledElements/Headings.styled';
 import CompanyValuesCard from './CompanyValuesCard';
 import { useGlobalContext } from '../../context';
+import Responsive from '../../abstracts/Responsive';
 
 const Container = styled.div`
   ${sectionSpacingMd}
@@ -12,6 +18,14 @@ const Container = styled.div`
   .values {
     ${sectionSpacingMd}
     ${threeCol}
+
+    ${Responsive.xl`
+      ${twoCol}
+    `}
+
+    ${Responsive.xl`
+      grid-template-columns: 1fr;
+    `}
   }
 `;
 

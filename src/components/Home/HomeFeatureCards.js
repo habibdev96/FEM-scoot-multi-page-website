@@ -2,11 +2,16 @@ import styled from 'styled-components';
 import { useGlobalContext } from '../../context';
 import { sectionSpacingMd, maxWidthLg, threeCol } from '../../abstracts/Mixins';
 import HomeFeatureCard from './HomeFeatureCard';
+import Responsive from '../../abstracts/Responsive';
 
 const Container = styled.div`
   ${sectionSpacingMd}
   ${maxWidthLg}
   ${threeCol}
+
+  ${Responsive.lg`
+    grid-template-columns: 1fr;
+  `}
 `;
 
 const HomeFeatureCards = () => {

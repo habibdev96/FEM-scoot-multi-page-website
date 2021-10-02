@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom';
 import { headingStyles } from '../../abstracts/Mixins';
 
 export const StyledButton = styled(Link)`
+  position: relative;
+  z-index: 10;
   display: inline-block;
   font-size: 1.5rem;
   padding: 1.5rem 4rem;

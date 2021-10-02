@@ -11,6 +11,8 @@ import Navbar from './components/Shared/Navbar';
 import Cta from './components/Shared/Cta';
 import Footer from './components/Shared/Footer';
 
+// TODO: make responsive | aos.js | mobile menu
+
 const App = () => {
   const { theme } = useGlobalContext();
 

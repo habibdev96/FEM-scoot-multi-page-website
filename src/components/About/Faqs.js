@@ -3,6 +3,7 @@ import { SectionHeading } from '../StyledElements/Headings.styled';
 import { sectionSpacingMd, maxWidthLg, twoCol } from '../../abstracts/Mixins';
 import Faq from './Faq';
 import { useGlobalContext } from '../../context';
+import Responsive from '../../abstracts/Responsive';
 
 const Container = styled.div`
   ${sectionSpacingMd}
@@ -13,6 +14,10 @@ const Container = styled.div`
     ${twoCol}
     ${sectionSpacingMd}
     align-items: start;
+
+    ${Responsive.lg`
+      grid-template-columns: 1fr;
+    `}
   }
 
   .faqs {

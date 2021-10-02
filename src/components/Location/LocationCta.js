@@ -7,11 +7,23 @@ import {
   maxWidthSm,
   flexAlign,
 } from '../../abstracts/Mixins';
+import Responsive from '../../abstracts/Responsive';
 
 const Container = styled.div`
   ${sectionSpacingSm}
   ${maxWidthSm}
   ${flexAlign}
+
+  ${Responsive.md`
+    flex-wrap: wrap;
+    text-align: center;
+  `}
+
+  .btn-container {
+    ${Responsive.md`
+      margin: 0 auto;
+    `}
+  }
 `;
 
 const LocationCta = () => {
@@ -26,9 +38,11 @@ const LocationCta = () => {
             message us by clicking the link or messaging us on social.
           </Paragraph>
         </div>
-        <StyledButton primary={+true} to='#!'>
-          Message Us
-        </StyledButton>
+        <div className='btn-container'>
+          <StyledButton primary={+true} to='#!'>
+            Message Us
+          </StyledButton>
+        </div>
       </Container>
     </section>
   );

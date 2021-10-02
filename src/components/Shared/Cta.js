@@ -8,6 +8,7 @@ import {
 import circles from '../../assets/patterns/semi-circles.svg';
 import appStoreIcon from '../../assets/icons/app-store.svg';
 import googlePlayIcon from '../../assets/icons/google-play.svg';
+import Responsive from '../../abstracts/Responsive';
 
 const StyledSection = styled.section`
   position: relative;
@@ -27,6 +28,12 @@ const Container = styled.div`
   ${sectionSpacingMd}
   ${flexAlign}
   justify-content: space-between;
+  flex-wrap: wrap;
+
+  ${Responsive.lg`
+    justify-content: center;
+    text-align: center;
+  `}
 
   & > div {
     ${flexAlign}
