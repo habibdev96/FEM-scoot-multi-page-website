@@ -2,6 +2,7 @@ import SubHero from '../components/Shared/SubHero';
 import bg from '../assets/images/careers-locations-hero-desktop.jpg';
 import FeatureSection from '../components/Shared/FeatureSection';
 import CompanyValuesCards from '../components/Shared/CompanyValuesCards';
+import Positions from '../components/Careers/Positions';
 import { useGlobalContext } from '../context';
 
 const Careers = () => {
@@ -15,6 +16,7 @@ const Careers = () => {
           <FeatureSection key={section.id} {...section} />
         ))}
         <CompanyValuesCards title='Why join us?' />
+        <Positions />
       </main>
     </>
   );

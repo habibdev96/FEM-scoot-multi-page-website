@@ -258,3 +258,36 @@ export const careersFeatureSectionData = [
     },
   },
 ];
+
+export const careersPositionsData = [
+  {
+    id: 1,
+    position: 'General Manager',
+    location: 'Jarkata, Indonesia',
+  },
+  {
+    id: 2,
+    position: 'UI/UX Designer',
+    location: 'Yokohama, Japan',
+  },
+  {
+    id: 1,
+    position: 'Blog Content Copywriter',
+    location: 'New York, United States',
+  },
+  {
+    id: 1,
+    position: 'Graphic Designer',
+    location: 'New York, United States',
+  },
+  {
+    id: 1,
+    position: 'Fleet Supervisor',
+    location: 'Jarkata, Indonesia',
+  },
+  {
+    id: 1,
+    position: 'UX Analyst',
+    location: 'London, United Kingdom',
+  },
+];
