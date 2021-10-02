@@ -6,6 +6,7 @@ export const StyledButton = styled(Link)`
   display: inline-block;
   font-size: 1.5rem;
   padding: 1.5rem 4rem;
+  text-align: center;
   transition: var(--mainTransition);
 
   ${({ primary }) =>
