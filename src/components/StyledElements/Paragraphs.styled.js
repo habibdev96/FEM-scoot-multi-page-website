@@ -7,6 +7,7 @@ const Paragraph = styled.p`
   padding: 2rem 0;
   color: ${({ theme }) => theme.text};
   ${({ light }) => light && 'color: var(--white);'}
+  ${({ faq }) => faq && 'padding: 0;'}
 `;
 
 export default Paragraph;
