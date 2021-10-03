@@ -8,13 +8,14 @@ import { useGlobalContext } from '../../context';
 const Overlay = styled.div`
   background-color: rgba(0, 0, 0, 0.7);
   position: fixed;
+  overflow: hidden;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
   z-index: 1000;
-  height: 100vh;
-  width: 100vw;
+  min-height: 100vh;
+  min-width: 100vw;
 
   @media (min-width: 800px) {
     display: none;
@@ -26,8 +27,8 @@ const StyledMobileMenu = styled.aside`
   position: fixed;
   top: 0;
   left: 0;
-  height: 100vh;
-  width: 50vw;
+  min-height: 100vh;
+  min-width: 50vw;
   z-index: 2100;
   overflow: hidden;
   transition: var(--mainTransition);
