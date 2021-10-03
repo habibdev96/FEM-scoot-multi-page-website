@@ -2,6 +2,8 @@
 
 4 page website challenge for frontend mentor
 
+site: https://fem-scoot-multi-page-website-challenge.netlify.app/
+
 #### Features
 - dark/light theme
 - faq accordion (about page)
