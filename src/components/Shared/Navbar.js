@@ -8,6 +8,7 @@ import ThemeToggleButton from './ThemeToggleButton';
 import { maxWidthLg, flexAlign } from '../../abstracts/Mixins';
 import { useGlobalContext } from '../../context';
 import Responsive from '../../abstracts/Responsive';
+import MobileMenuToggler from './MobileMenuToggler';
 
 const StyledNav = styled.nav`
   position: fixed;
@@ -23,8 +24,16 @@ const Container = styled.div`
   ${flexAlign}
   justify-content: space-between;
 
+  ${Responsive.lg`
+    align-items: flex-start;
+  `}
+
   .logo {
     width: 15rem;
+
+    ${Responsive.lg`
+      width: 10rem;
+    `}
   }
 
   .left,
@@ -34,7 +43,8 @@ const Container = styled.div`
   }
 
   .links,
-  .btn {
+  .btn,
+  .right {
     ${Responsive.lg`
       display: none;
     `}
@@ -76,6 +86,7 @@ const Navbar = () => {
             Get Scootin
           </StyledButton>
         </div>
+        <MobileMenuToggler />
       </Container>
     </StyledNav>
   );

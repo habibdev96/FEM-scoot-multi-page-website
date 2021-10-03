@@ -1,9 +1,14 @@
 import styled from 'styled-components';
 import { CardHeading } from '../StyledElements/Headings.styled';
 import Paragraph from '../StyledElements/Paragraphs.styled';
+import Responsive from '../../abstracts/Responsive';
 
 const StyledArticle = styled.article`
   position: relative;
+
+  ${Responsive.sm`
+    text-align: center;
+  `}
 
   .icon {
     position: relative;
@@ -21,6 +26,10 @@ const StyledArticle = styled.article`
     height: 1rem;
     width: 100%;
     background-color: ${({ theme }) => theme.secondaryBg};
+
+    ${Responsive.sm`
+      display: none;
+    `}
   }
 `;
 

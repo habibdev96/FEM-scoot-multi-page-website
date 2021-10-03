@@ -31,6 +31,7 @@ export const AppProvider = ({ children }) => {
     careersFeatureSectionData
   );
   const [positions, setPositions] = useState(careersPositionsData);
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
   const themeToggler = () => {
     if (theme === 'light') {
@@ -59,6 +60,8 @@ export const AppProvider = ({ children }) => {
         faqs,
         careersFeatureSection,
         positions,
+        isSidebarOpen,
+        setIsSidebarOpen,
       }}
     >
       {children}
