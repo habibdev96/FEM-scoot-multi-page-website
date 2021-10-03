@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import { textStyles } from '../../abstracts/Mixins';
 import { useGlobalContext } from '../../context';
 import { FiSun, FiMoon } from 'react-icons/fi';
+import Responsive from '../../abstracts/Responsive';
 
 const Toggler = styled.button`
   ${textStyles}
@@ -15,6 +16,10 @@ const Toggler = styled.button`
   border: 0;
   background-color: transparent;
   transition: var(--mainTransition);
+
+  ${Responsive.sm`
+    font-size: 1.3rem;
+  `}
 
   &:hover,
   &:focus {

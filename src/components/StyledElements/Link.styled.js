@@ -8,6 +8,8 @@ const StyledLink = styled(Link)`
   font-size: 1.5rem;
   transition: var(--mainTransition);
 
+  ${({ mobile }) => mobile && `font-size: 2.5rem;`}
+
   &:hover,
   &:focus {
     color: var(--yellow);

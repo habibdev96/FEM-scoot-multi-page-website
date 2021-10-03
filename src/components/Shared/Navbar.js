@@ -13,7 +13,7 @@ import MobileMenuToggler from './MobileMenuToggler';
 const StyledNav = styled.nav`
   position: fixed;
   width: 100%;
-  z-index: 1000;
+  z-index: 3000;
   transition: var(--mainTransition);
   background-color: ${({ theme }) => theme.mainBg};
 `;
@@ -40,11 +40,15 @@ const Container = styled.div`
   .right,
   .links {
     ${flexAlign}
+
+    ${Responsive.sm`
+      align-items: start;
+      gap: 2rem;
+    `}
   }
 
   .links,
-  .btn,
-  .right {
+  .btn {
     ${Responsive.lg`
       display: none;
     `}
@@ -52,13 +56,19 @@ const Container = styled.div`
 `;
 
 const Navbar = () => {
-  const { theme, links, scrollToTop } = useGlobalContext();
+  const { theme, links, scrollToTop, setIsSidebarOpen } = useGlobalContext();
 
   return (
     <StyledNav>
       <Container>
         <div className='left'>
-          <Link to='/' onClick={scrollToTop}>
+          <Link
+            to='/'
+            onClick={() => {
+              scrollToTop();
+              setIsSidebarOpen(false);
+            }}
+          >
             <img
               src={theme === 'light' ? logodark : logolight}
               alt='scoot logo'
@@ -85,8 +95,8 @@ const Navbar = () => {
           >
             Get Scootin
           </StyledButton>
+          <MobileMenuToggler />
         </div>
-        <MobileMenuToggler />
       </Container>
     </StyledNav>
   );

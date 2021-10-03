@@ -10,6 +10,7 @@ import About from './pages/About';
 import Location from './pages/Location';
 import Careers from './pages/Careers';
 import Navbar from './components/Shared/Navbar';
+import MobileMenu from './components/Shared/MobileMenu';
 import Cta from './components/Shared/Cta';
 import Footer from './components/Shared/Footer';
 
@@ -25,6 +26,7 @@ const App = () => {
         <Globals />
         <Router>
           <Navbar />
+          <MobileMenu />
           <Switch>
             <Route exact path='/' component={Home} />
             <Route exact path='/About' component={About} />
