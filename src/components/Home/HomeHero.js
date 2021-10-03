@@ -109,18 +109,24 @@ const HomeHero = () => {
       <Container>
         <img src={line} alt='' className='pattern pattern--line' />
         <div>
-          <HeroHeading>
+          <HeroHeading data-aos='fade-in'>
             Scooter sharing <br /> made simple
           </HeroHeading>
           <div>
-            <Paragraph light>
+            <Paragraph light data-aos='fade-in' data-aos-delay='100'>
               Scoot takes the hassle out of urban mobility. Our bikes are placed
               in convenient locations in each of our cities. Use our app to
               locate the nearest bike, unlock it with a tap, and you’re away!
             </Paragraph>
-            <StyledButton to='/Location' primary={+true} onClick={scrollToTop}>
-              Get Scootin
-            </StyledButton>
+            <div data-aos='fade-in' data-aos-delay='200'>
+              <StyledButton
+                to='/Location'
+                primary={+true}
+                onClick={scrollToTop}
+              >
+                Get Scootin
+              </StyledButton>
+            </div>
           </div>
         </div>
         <img src={rightArrow} alt='' className='pattern pattern--arrow' />

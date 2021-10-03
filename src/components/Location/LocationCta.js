@@ -29,7 +29,7 @@ const Container = styled.div`
 const LocationCta = () => {
   return (
     <section>
-      <Container>
+      <Container data-aos='fade-in' data-aos-delay='200'>
         <div>
           <SectionHeading>Your city not listed?</SectionHeading>
           <Paragraph>

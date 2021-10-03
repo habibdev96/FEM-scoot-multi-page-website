@@ -1,5 +1,7 @@
 import Globals from './abstracts/Globals';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import AOS from 'aos';
+import '../node_modules/aos/dist/aos.css';
 import { ThemeProvider } from 'styled-components';
 import { lightTheme, darkTheme } from './abstracts/Themes';
 import { useGlobalContext } from './context';
@@ -14,6 +16,7 @@ import Footer from './components/Shared/Footer';
 // TODO: make responsive | aos.js | mobile menu
 
 const App = () => {
+  AOS.init({ offset: 10, duration: 1000, once: true });
   const { theme } = useGlobalContext();
 
   return (

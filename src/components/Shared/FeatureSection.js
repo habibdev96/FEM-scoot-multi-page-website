@@ -106,7 +106,7 @@ const FeatureSection = ({
   return (
     <StyledSection>
       <Container>
-        <div className='info'>
+        <div className='info' data-aos='fade-in'>
           <SectionHeading>{title}</SectionHeading>
           <Paragraph>{description}</Paragraph>
           {showButton && (
@@ -119,6 +119,8 @@ const FeatureSection = ({
           src={showcase}
           alt={alt}
           className={`showcase ${id === 2 && 'left'}`}
+          data-aos='fade-in'
+          data-aos-delay='200'
         />
       </Container>
       <img src={arrow} alt='' className={`pattern pattern-arrow-${id}`} />

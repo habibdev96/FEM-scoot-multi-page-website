@@ -70,7 +70,7 @@ const Container = styled.div`
 const MapSection = () => {
   return (
     <section>
-      <Container>
+      <Container data-aos='fade-in' data-aos-delay='200'>
         <img src={map} alt='' />
         <div className='tab tab--1'>
           <h2>New York</h2>

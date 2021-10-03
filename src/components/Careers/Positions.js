@@ -13,7 +13,7 @@ const Positions = () => {
 
   return (
     <section>
-      <Container>
+      <Container data-aos='fade-in' data-aos-delay='200'>
         {positions.map((pos) => (
           <Position key={pos.id} {...pos} />
         ))}

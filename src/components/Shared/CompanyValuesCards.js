@@ -34,7 +34,7 @@ const CompanyValuesCards = ({ title }) => {
 
   return (
     <section>
-      <Container>
+      <Container data-aos='fade-in' data-aos-delay='200'>
         <SectionHeading>{title}</SectionHeading>
         <div className='values'>
           {companyValues.map((value) => (

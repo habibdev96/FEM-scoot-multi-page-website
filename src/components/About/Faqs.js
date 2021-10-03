@@ -33,7 +33,7 @@ const Faqs = () => {
 
   return (
     <section>
-      <Container>
+      <Container data-aos='fade-in' data-aos-delay='200'>
         <SectionHeading>FAQs</SectionHeading>
         <div className='faqs-group'>
           <SectionHeading>How it works</SectionHeading>

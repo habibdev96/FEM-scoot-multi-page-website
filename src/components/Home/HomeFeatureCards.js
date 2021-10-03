@@ -19,7 +19,7 @@ const HomeFeatureCards = () => {
 
   return (
     <section>
-      <Container>
+      <Container data-aos='fade-in'>
         {homeFeatureCards.map((card) => (
           <HomeFeatureCard key={card.id} {...card} />
         ))}
